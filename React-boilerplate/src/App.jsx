@@ -11,7 +11,7 @@ const rootEl = document.getElementById('root');
                    
                              <div className="App">
                                 
-                                <p> Hello welcome to Lave</p>
+                                <p> Hello welcome to <span style = {{color: '#42A8E7'}}>Lave</span></p>
                                 <p> We appreciate the support</p> 
                                 <p> If you have any questions feel free to email lavepack@gmail.com for any inqueries</p>
                                </div>
