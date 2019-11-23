@@ -1,26 +1,47 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import websitelogo from './components/images/websitelogo.png';
+import image from './components/images/webbackground2.0.png'
+
+import NavContainer from  './components/NavContainer';
+import ContentContainer from './components/ContentContainer';
+import SocialContainer from './components/SocialContainer.jsx';
 
 const rootEl = document.getElementById('root');
 
 
     class App extends React.Component{
+      constructor(){
+        super();
+        this.state = {
+            disp: 0,
+        }
+        this.changeViews = this.changeViews.bind(this);
+    }
+    changeViews(num){
+          this.setState({
+            disp: num
+          });
+    }
             render(){
                     return(
                    
                              <div className="App"
                                     style = {{display: 'flex',
+                                              height: '100%',
+                                              width: '100%',
                                               flexDirection: 'column',
                                               alignItems: 'center',
-                                              justifyContent: 'space-around'}}>
-                              <img src={websitelogo}  atl='logo'/>
-                               <iframe width="560" height="315" src="https://www.youtube.com/embed/oqq4w59lC9E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                <button id = 'surveyButton' onClick = {()=>{ document.getElementById('survey').removeAttribute('hidden'); 
-                                document.getElementById('surveyButton').setAttribute('hidden', true);}} > Love us?</button>
-                                <iframe id = 'survey' hidden src="https://docs.google.com/forms/d/e/1FAIpQLScdB5NflO_JlgkqUQvch6dzbbLRHhZ9jJnLW-yieevciMoCFA/viewform?embedded=true" width="640" height="1948" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-                                <p> If you have any questions feel free to email lavepack@gmail.com for a prompt response.</p>
-                                
+                                              justifyContent: 'space-between',
+                                              marginTop: '40px',
+
+                                              }}>
+
+                              <NavContainer changeView = {this.changeViews} />
+
+                             
+                             <ContentContainer display = {this.state.disp} />
+                             <SocialContainer />
+                           
                                </div>
                     );
 
