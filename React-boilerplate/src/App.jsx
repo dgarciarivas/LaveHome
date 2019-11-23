@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
+import websitelogo from './components/images/websitelogo.png';
 
 const rootEl = document.getElementById('root');
 
@@ -9,11 +9,18 @@ const rootEl = document.getElementById('root');
             render(){
                     return(
                    
-                             <div className="App">
+                             <div className="App"
+                                    style = {{display: 'flex',
+                                              flexDirection: 'column',
+                                              alignItems: 'center',
+                                              justifyContent: 'space-around'}}>
+                              <img src={websitelogo}  atl='logo'/>
+                               <iframe width="560" height="315" src="https://www.youtube.com/embed/oqq4w59lC9E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <button id = 'surveyButton' onClick = {()=>{ document.getElementById('survey').removeAttribute('hidden'); 
+                                document.getElementById('surveyButton').setAttribute('hidden', true);}} > Love us?</button>
+                                <iframe id = 'survey' hidden src="https://docs.google.com/forms/d/e/1FAIpQLScdB5NflO_JlgkqUQvch6dzbbLRHhZ9jJnLW-yieevciMoCFA/viewform?embedded=true" width="640" height="1948" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                                <p> If you have any questions feel free to email lavepack@gmail.com for a prompt response.</p>
                                 
-                                <p> Hello welcome to <span style = {{color: '#42A8E7'}}>Lave</span></p>
-                                <p> We appreciate the support</p> 
-                                <p> If you have any questions feel free to email lavepack@gmail.com for any inqueries</p>
                                </div>
                     );
 
