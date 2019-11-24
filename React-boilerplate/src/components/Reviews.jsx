@@ -4,7 +4,7 @@ const Reviews = () =>{
 	
 		return(
 
-				<div id = 'Reviews' style={{color: 'black', backgroundColor: '#3FAAE7',
+				<div id = 'Reviews' style={{color: '#CBDEEB', backgroundColor: '#3FAAE7',
                                 textAlign: 'center',
                                 width: '275px',
                                 height: '475px',

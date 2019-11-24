@@ -4,16 +4,19 @@ const About = () =>{
 	
 		return(
 
-				<div id = 'About' style={{color: 'black', backgroundColor: '#3FAAE7',
+				<div id = 'About' style={{color: '#CBDEEB', backgroundColor: '#3FAAE7',
                                 textAlign: 'center',
                                 width: '275px',
                                 height: '475px',
                                 borderRadius: '10px',
+                               
                                 
                                   }}>
-                                    <h1> Love of the glass</h1>
-                                    <p> This company was started because two individuals thought there had to be a
-                                    more efficient method to quickly and effectively maintian their glass.</p>
+                                    <h1> <span style={{color: "#f9ecf6"}}>Love</span> of the <span style={{color: "white"}}>glass</span></h1>
+                                    <div id = 'about-content' style = {{ paddingLeft: '15px',
+                                paddingRight: '15px',}}>
+                                    <p> This product began when two individuals thought there had to exist an efficient method to quickly and effectively maintian their glass.</p>
+                                    </div>
 
                                 </div>
 			)

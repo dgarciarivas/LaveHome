@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import sandwich from './images/navigation-icon_1_10.png';
+import sandwich from './images/navigation-icon_1_10_1_50.png';
 
 
 class Nav extends React.Component{
@@ -14,10 +14,10 @@ class Nav extends React.Component{
     ShowMenu(){
         if(!this.state.visible){
             this.setState({visible: true});
-        document.getElementById('nav-option-container').removeAttribute('hidden');
+        document.getElementById('nav-option-container').style.setProperty('visibility', 'visible');
     }else{
         this.setState({visible: false});
-        document.getElementById('nav-option-container').setAttribute('hidden', true);
+        document.getElementById('nav-option-container').style.setProperty('visibility', 'hidden');
     }
         
 
@@ -25,38 +25,43 @@ class Nav extends React.Component{
 	render(){
 		return(
 
-                                   <div id = 'Nav' 
+           <div id = 'Nav' style = {{
+                                   	}}
                                    >
-                                        <img style = {{borderRadius: '5px', border: '1px solid black', }}onClick = {
+                   <div id = 'sandwichContainer'>
+                         <img style = {{borderRadius: '5px', border: '1px solid black', }}
+                         onClick = {
                                             ()=>{
                                             //display the options for the views of the static site
-                                            this.ShowMenu();
-
-
-                                            
-
+                                            this.ShowMenu();                                     
                                         }}src={sandwich} 
-                                          alt= 'nav-icon' 
-
-                                       
+                                          alt= 'nav-icon'     
                                    />
-                                   <div id = 'nav-option-container' style = {{
-                                    fontSize: '13px', textAlign: 'center', backgroundColor: '#3FAAE7',
+                   </div>
+                 <div id = 'nav-option-container' 
+                 					style = {{
+                 					display: 'flex',
+                                   	flexDirection: 'column',
+                                    textAlign: 'center', 
+                                    backgroundColor: '#3FAAE7',
                                     border: '1px solid black',
                                     borderRadius: '5px',
-                                   }} hidden>
-                                        <p style = {{color: '#f9ecf6'}} onClick = {() =>{ 
+                                    visibility: 'hidden',
+                                   
+                                    paddingLeft: '2px',
+                                    paddingRight: '2px',
+                                   }} >
+                         <span style = {{color: '#f9ecf6', fontSize: '10px',}} onClick = {() =>{ 
                                                             this.props.changeView(1);
                                                             }}
-                                        >About</p>
-                                         <p style = {{color: '#f9ecf6'}} onClick = {() =>{this.props.changeView(2);}}>HowTo</p>
-                                        <p style = {{color: '#f9ecf6'}} onClick = {() =>{ this.props.changeView(3);}}>Reviews</p>
+                                        >About</span>
+                          <span style = {{color: '#f9ecf6', fontSize: '10px',}} onClick = {() =>{this.props.changeView(2);}}>HowTo</span>
+                          <span style = {{color: '#f9ecf6', fontSize: '10px',}} onClick = {() =>{ this.props.changeView(3);}}>Reviews</span>
                                        
-                                   </div>
-                              
-                                   
-
-                </div>
+                 </div>
+                 
+                                 
+            </div>
 			)
     }
 		

@@ -4,25 +4,26 @@ const Landing = () =>{
 	
 		return(
 
-				<div id = 'Landing' style={{color: '#CBDEEB', backgroundColor: '#3FAAE7',
+				<div className = "content" id = 'Landing' /*style={{color: '#CBDEEB', backgroundColor: '#3FAAE7',
                                 textAlign: 'center',
                                 width: '275px',
                                 height: '475px',
                                 borderRadius: '10px',
                                 border: '2px 0.5px 0.5px 0.5px black',
-                                justifyContent: 'center',
-                                  }}>
+                                justifyContent: 'center',*/
+                                  >
                                 
                                     <div id = 'wordDescrip'> <p style ={{color: '#f9ecf6'}}> /lāv/ </p>
                                         <span style ={{fontStyle: 'italic', color: '#f9ecf6'}}>verb: wash</span> 
                                         
                                     </div>
-                                    <div id = 'landingContent' style = {{color: '#CBDEEB'}} >
+                                    <div id = 'landingContent' style = {{color: '#CBDEEB', paddingLeft: '15px',
+                                paddingRight: '15px',}} >
                                     <p href="https://www.merriam-webster.com/dictionary/lave"> The word <span style={{color: '#f9ecf6'}}>lave</span> is simple and monosyllabic.This word magically makes the mundane act of washing poetic.
                                     </p> 
-                                    <p>DYK? \n Shakespeare used it in The Taming of the Shrew,and Charles Dickens' The Old Curiosity Shop, </p>
+                                    <p>This is our mission at <span style = {{color: '#f9ecf6'}}>Lave</span>. We strive to bring a pleasant experience to those who admire and enjoy the process of maintaining their premium glass.</p>
                                     </div>
-                                    click on the logo at any point to get back to this page
+        
                                 </div>
 			)
 		
