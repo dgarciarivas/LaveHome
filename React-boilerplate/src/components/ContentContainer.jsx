@@ -1,8 +1,8 @@
 import React from 'react';
-import About from './About';
-import HowTo from './HowTo';
-import Reviews from './Reviews';
-import Landing from './Landing';
+import About from './content/About';
+import HowTo from './content/HowTo';
+import Reviews from './content/Reviews';
+import Landing from './content/Landing';
 
 const ContentContainer = (props) =>{
 

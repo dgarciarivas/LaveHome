@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import image from './components/images/webbackground2.0.png'
 
 import NavContainer from  './components/NavContainer';
 import ContentContainer from './components/ContentContainer';

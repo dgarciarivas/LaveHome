@@ -12,6 +12,8 @@ const Reviews = () =>{
                                 visibility: 'visible',
                                   }}>
                                     <p> Listen to the people</p>
+                                    <p> View the results of our customer survery  <a id = 'link-to-reviews' onMouseOver ={()=>{document.getElementById('link-to-reviews').style.color = 'black';}} onMouseOut ={()=>{document.getElementById('link-to-reviews').style.color = 'white';}} style = {{textDecoration: 'none', color: 'white'}} href = "https://docs.google.com/spreadsheets/d/1wkbWWSLuVpZNb-v6gFhQfaEvMckvY-4zbzMsXLc0aBQ/edit?usp=sharing"> here</a></p>
+                                   
                                     
                                 </div>
 			)
