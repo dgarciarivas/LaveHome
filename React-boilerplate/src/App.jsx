@@ -20,7 +20,8 @@ const rootEl = document.getElementById('root');
           this.setState({
             disp: num
           });
-    }
+
+          }
             render(){
                     return(
                    
@@ -35,7 +36,7 @@ const rootEl = document.getElementById('root');
 
                                               }}>
 
-                              <NavContainer changeView = {this.changeViews} />
+                              <NavContainer changeView = {this.changeViews} display = {this.state.disp}/>
 
                              
                              <ContentContainer display = {this.state.disp} />

@@ -26,6 +26,7 @@ const ContentContainer = (props) =>{
 			break;
 
 		case 1: 
+    
 			return(
 				<div id = 'content-container'
                                     style = {{
