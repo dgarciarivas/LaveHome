@@ -12,7 +12,7 @@ const rootEl = document.getElementById('root');
       constructor(){
         super();
         this.state = {
-            disp: 3,
+            disp: 0,
         }
         this.changeViews = this.changeViews.bind(this);
     }
