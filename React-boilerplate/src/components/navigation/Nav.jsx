@@ -28,14 +28,15 @@ class Nav extends React.Component{
 		return(
 
            <div id = 'Nav' style= {{boxShadow:  'none',
-                                    borderRadius: '10px'}} >
-                <Sandwich  ShowMenu = {this.ShowMenu}/>
+                                    borderRadius: '10px',
+                                    marginTop: '20px'}} >
+                {/*<Sandwich  ShowMenu = {this.ShowMenu}/>*/}
                  <div id = 'nav-option-container' 
                  					style = {{
                  					display: 'flex',
                                    	flexDirection: 'column',
                                     textAlign: 'center', 
-                                    visibility: 'hidden',
+                                    visibility: 'visible',
                                    
                                     
                                    }} >

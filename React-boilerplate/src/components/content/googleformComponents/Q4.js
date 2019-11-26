@@ -1,0 +1,17 @@
+import React from 'react';
+
+const Q4 = ()=>{
+		return(
+			<div id = 'Q4'>
+					   <div id = 'fillInQContainer' > 
+					   		Breifly explain why you didn't use it?
+					   </div>
+						<div id = 'fillInAContainer'    > 
+							<input  className = 'fillInResponse'  type="text" name ="entry.465729867" id="entry.465729867"/>
+						</div>
+                      
+            </div>
+		)
+}
+
+export default Q4;

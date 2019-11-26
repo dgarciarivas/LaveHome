@@ -16,7 +16,7 @@ const NavContainer = (props) => {
                     width: '302px',
                     borderRadius: '10px',
                          }}>
-                         <div id = 'spacer' style ={{width: '88px'}}> </div>
+                       {/*  <div id = 'spacer' style ={{width: '88px'}}> </div>*/}
                                    <div id = 'logoContainer' >
                                      <img  src={websitelogo}  alt='logo' onClick = {()=>{props.changeView(0)}} />
                           

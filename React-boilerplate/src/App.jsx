@@ -12,7 +12,7 @@ const rootEl = document.getElementById('root');
       constructor(){
         super();
         this.state = {
-            disp: 0,
+            disp: 3,
         }
         this.changeViews = this.changeViews.bind(this);
     }
@@ -32,7 +32,7 @@ const rootEl = document.getElementById('root');
                                               flexDirection: 'column',
                                               alignItems: 'center',
                                               justifyContent: 'space-between',
-                                              marginTop: '40px',
+                                              marginTop: '10px',
 
                                               }}>
 

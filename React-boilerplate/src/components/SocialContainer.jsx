@@ -1,8 +1,8 @@
 import React from 'react';
-import fbFavicon from './images/fbfavicon.png';
-import instafavicon from './images/instafavicon16.png';
-import twitterfavicon from './images/twitterfavicon16.png';
-import bbfavicon from './images/bbfavicon16.png';
+import fbFavicon from './images/fbfavicon32.png';
+import instafavicon from './images/instafavicon.png';
+import twitterfavicon from './images/twitterfavicon32.png';
+import bbfavicon from './images/bbfavicon32.png';
 
 const SocialContainer = () =>{
 return(
