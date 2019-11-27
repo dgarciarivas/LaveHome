@@ -41,6 +41,7 @@ const rootEl = document.getElementById('root');
                              
                              <ContentContainer display = {this.state.disp} />
                              <SocialContainer />
+                              <iframe name="hidden_iframe" id="hidden_iframe" style={{visibility: 'hidden', width: '150px'}}  ></iframe>
                            
                                </div>
                     );

@@ -17,7 +17,7 @@ const Landing = () =>{
                                         <span style ={{fontStyle: 'italic', color: '#f9ecf6'}}>verb: wash</span> 
                                         
                                     </div>
-                                    <div id = 'landingContent' style = {{color: '#CBDEEB', paddingLeft: '15px',
+                                    <div id = 'landingContent' style = {{color: 'black', paddingLeft: '15px',
                                 paddingRight: '15px',}} >
                                     <p href="https://www.merriam-webster.com/dictionary/lave"> The word <span style={{color: '#f9ecf6'}}>lave</span> is simple and monosyllabic.This word magically makes the mundane act of washing poetic.
                                     </p> 

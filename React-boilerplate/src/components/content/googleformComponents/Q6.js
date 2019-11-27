@@ -4,7 +4,7 @@ const Q6 = ()=>{
 		return(
 			<div id = 'Q6' style = {{display: 'flex', flexDirection: 'row',}}>
 					   <div style = {{color: 'black', width: '200px',}}>  Would you tell your peers about Lave?</div> 
-						<div style = {{backgroundColor: "#CBDEEB", flexGrow: 2, borderRadius: '10px', color: 'black',}}>
+						<div style = {{backgroundColor: "white", flexGrow: 2, borderRadius: '10px', color: 'black',}}>
                    			 <input type = 'radio' name="entry.393887415" id ="entry.393887415" value = "Yes"/>Yes<br/>
                               <input  type = 'radio' name="entry.393887415" id ="entry.393887415" value = "No"/> No<br/>
 						</div>
