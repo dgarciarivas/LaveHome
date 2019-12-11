@@ -20,7 +20,7 @@ const rootEl = document.getElementById('root');
           this.setState({
             disp: num
           });
-
+             
           }
             render(){
                     return(
@@ -34,14 +34,15 @@ const rootEl = document.getElementById('root');
                                               justifyContent: 'space-between',
                                               marginTop: '10px',
 
+
                                               }}>
 
                               <NavContainer changeView = {this.changeViews} display = {this.state.disp}/>
 
                              
-                             <ContentContainer display = {this.state.disp} />
+                             <ContentContainer changeView = {this.changeViews} display = {this.state.disp} />
                              <SocialContainer />
-                              <iframe name="hidden_iframe" id="hidden_iframe" style={{visibility: 'hidden', width: '150px'}}  ></iframe>
+                              <iframe name="hidden_iframe" id="hidden_iframe" style={{visibility: 'hidden', width: '150px', height: '1px'}}  ></iframe>
                            
                                </div>
                     );

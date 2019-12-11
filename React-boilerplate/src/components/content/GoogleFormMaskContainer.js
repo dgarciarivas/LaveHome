@@ -10,7 +10,27 @@ import Q7 from './googleformComponents/Q7';
 
 
 
-const GoogleFormMaskContainer = () =>{
+class GoogleFormMaskContainer extends React.Component{
+
+  constructor(){
+    super();
+    this.state = {
+      submitted: false
+
+    }
+
+  }
+  handleSubmit(){
+       if(this.state.submitted = false){
+          console.log("form was submitted");
+          this.setState({submitted: true});
+          alert('tTanks for the feedback! If you love it then Lave it!');
+        }else{
+          console.log("already submitted");
+        }
+        console.log(this.state);
+  }
+render(){
 	return(
 
 			<form id = 'GoogleFormMaskContainer' action = {'https://docs.google.com/forms/d/e/1FAIpQLScdB5NflO_JlgkqUQvch6dzbbLRHhZ9jJnLW-yieevciMoCFA/formResponse?'} target = 'hidden_iframe' method = "post" >
@@ -21,10 +41,11 @@ const GoogleFormMaskContainer = () =>{
                   <Q5 />
                   <Q6 />
                   <Q7 />
-                <input style = {{border: 'black'}} type = "submit" value = 'Submit' />
+                <button style = {{border: 'black', cursor: 'pointer'}} 
+                          onSubmit = {this.handleSubmit()}> Submit!</button>
             </form>
 
 	)
 }
-
+}
 export default GoogleFormMaskContainer;

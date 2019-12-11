@@ -2,15 +2,15 @@ import React from 'react';
 
 const Q3 = ()=>{
 		return(
-			<div id = 'Q3'>
+			<div id = 'Q3' className = 'QuestionContainer'>
 					            <span style = {{color: 'black'}}>How useful were our tools?</span><br/>
-                                        <div id = "usefulQs" style = {{backgroundColor: 'white', display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly', borderRadius: '10px',}}>
+                                        <div id = "usefulQs" style = {{backgroundColor: '#f9f9f9', display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly', borderRadius: '10px',}}>
 
                                             <div id = 'itemTextContainer' style = {{flexGrow: 1, color: 'black'}}>
-                                                    <div style = {{backgroundColor: 'black', borderRadius: '12px', color: '#CBDEEB'}}>Item</div>
+                                                    <div style = {{backgroundColor: 'black', borderRadius: '12px', color: '#f9f9f9'}}>Item</div>
                                                     <div>Wire</div>
                                                     <div>Alcohol Wipe</div>
-                                                    <div>Long Swap</div>
+                                                    <div>Long Swab</div>
                                             </div>
                                             <div id = 'usefulAs' style={{display: 'flex', flexDirection: 'column', flexGrow: 3, color: 'black',}}>
                                                             <div id = "usefulOptionsContainer" style = {{display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly', fontSize: '12px'}}>

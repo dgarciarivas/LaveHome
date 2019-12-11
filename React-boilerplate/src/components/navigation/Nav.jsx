@@ -37,28 +37,29 @@ class Nav extends React.Component{
                                    	flexDirection: 'column',
                                     textAlign: 'center', 
                                     visibility: 'visible',
+
                                    
                                     
                                    }} >
                                    <div>
                                          <span className = 'selector' id = 'aboutSelector'  
                                                                     onClick = {() =>{
-                                                                            document.getElementById('aboutSelector').style.color = '#CBDEEB';
+                                                                            document.getElementById('aboutSelector').style.color = 'navy'; //change to black when only mobile
                                                                             this.props.changeView(1);
                                                                             }}
-                                                       onMouseOver= {()=>{document.getElementById('aboutSelector').style.color = 'white';
+                                                       onMouseOver= {()=>{document.getElementById('aboutSelector').style.color = 'black';
                                                                           document.getElementById('aboutSelector').style.cursor = 'pointer'}}
-                                                       onMouseOut= {()=>{document.getElementById('aboutSelector').style.color = '#f9ecf6'}} >
+                                                       onMouseOut= {()=>{document.getElementById('aboutSelector').style.color = '#3FAAE7'}} >
                                             About Us
                                           </span>
                                   </div>
                                   <div>
                                     <span id = 'howtoSelector' className = 'selector'
-                                                      onClick = {() =>{document.getElementById('howtoSelector').style.color = '#CBDEEB';
+                                                      onClick = {() =>{document.getElementById('howtoSelector').style.color = 'navy';
                                                                     this.props.changeView(2);}}
-                                    onMouseOver= {()=>{document.getElementById('howtoSelector').style.color = 'white';
+                                    onMouseOver= {()=>{document.getElementById('howtoSelector').style.color = 'black';
                                                         document.getElementById('howtoSelector').style.cursor = 'pointer';}}
-                                                 onMouseOut= {()=>{document.getElementById('howtoSelector').style.color = '#f9ecf6'}}
+                                                 onMouseOut= {()=>{document.getElementById('howtoSelector').style.color = '#3FAAE7'}}
                                       >
                                       How-To
                                     </span>
@@ -66,13 +67,13 @@ class Nav extends React.Component{
                                   <div>
                                         <span id = 'reviewSelector' className = 'selector'
                                           onClick = {() =>{ 
-                                                document.getElementById('reviewSelector').style.color = '#CBDEEB';
+                                                document.getElementById('reviewSelector').style.color = 'navy';
                                                 this.props.changeView(3);}}
-                                          onMouseOver= {()=>{document.getElementById('reviewSelector').style.color = 'white';
+                                          onMouseOver= {()=>{document.getElementById('reviewSelector').style.color = 'black';
                                                               document.getElementById('reviewSelector').style.cursor = 'pointer'}}
-                                        onMouseOut= {()=>{document.getElementById('reviewSelector').style.color = '#f9ecf6'}}
+                                        onMouseOut= {()=>{document.getElementById('reviewSelector').style.color = '#3FAAE7'}}
                                         >
-                                          Reviews
+                                          Review
                                         </span>
                                     </div>
                                        

@@ -17,7 +17,7 @@ const NavContainer = (props) => {
                     borderRadius: '10px',
                          }}>
                        {/*  <div id = 'spacer' style ={{width: '88px'}}> </div>*/}
-                                   <div id = 'logoContainer' >
+                                   <div id = 'logoContainer' style = {{cursor: 'pointer'}}>
                                      <img  src={websitelogo}  alt='logo' onClick = {()=>{props.changeView(0)}} />
                           
                                     </div>

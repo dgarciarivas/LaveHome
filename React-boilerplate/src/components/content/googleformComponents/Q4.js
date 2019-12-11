@@ -2,7 +2,7 @@ import React from 'react';
 
 const Q4 = ()=>{
 		return(
-			<div id = 'Q4'>
+			<div id = 'Q4' className = 'QuestionContainer'>
 					   <div id = 'fillInQContainer' > 
 					   		Breifly explain why you didn't use it?
 					   </div>

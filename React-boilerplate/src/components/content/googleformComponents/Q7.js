@@ -2,7 +2,7 @@ import React from 'react';
 
 const Q7 = ()=>{
 	return(
-			<div id ="Q7">
+			<div id ="Q7" className = 'QuestionContainer'>
 					          <div id = 'fillInQContainer' > 
 					          	We value all customer feedback. Please tell us your thoughts!
 					          </div>

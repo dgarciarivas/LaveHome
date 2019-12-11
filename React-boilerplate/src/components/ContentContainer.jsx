@@ -3,24 +3,14 @@ import About from './content/About';
 import HowTo from './content/HowTo';
 import Reviews from './content/Reviews';
 import Landing from './content/Landing';
+import ToolsPage from './content/ToolsPage';
 
 const ContentContainer = (props) =>{
 
 	switch (props.display){
 		case 0: 
 			return(
-				<div id = 'content-container'
-                                    style = {{
-                                      display: 'flex',
-                                      justifyContent: 'center',
-                                      alignItems: 'center',
-                                        height: '500px',
-                                        width: '300px',
-                                        borderRadius:'25px',
-                                        backgroundColor: "white",
-                                        boxShadow: ' 0px 5px 3px 5px #bfaae9',
-                                        marginTop: '10px',
-                                    }}>
+				<div id = 'content-container'>
                      <Landing />
                </div>);
 			break;
@@ -28,56 +18,33 @@ const ContentContainer = (props) =>{
 		case 1: 
     
 			return(
-				<div id = 'content-container'
-                                    style = {{
-                                      display: 'flex',
-                                      justifyContent: 'center',
-                                      alignItems: 'center',
-                                        height: '500px',
-                                        width: '300px',
-                                        borderRadius:'25px',
-                                        backgroundColor: "white",
-                                        boxShadow: ' 0px 5px 3px 5px #bfaae9',
-                                        marginTop: '10px',
-                                    }}>
+				<div id = 'content-container'>
                      <About />
                </div>);
 			break;
 
+		
 		case 2:
-			return( <div id = 'content-container'
-                                    style = {{
-                                      display: 'flex',
-                                      justifyContent: 'center',
-                                      alignItems: 'center',
-                                        height: '500px',
-                                        width: '300px',
-                                        borderRadius:'25px',
-                                        backgroundColor: "white",
-                                        boxShadow: ' 0px 5px 3px 5px #bfaae9',
-                                        marginTop: '10px',
-                                    }}>
-                     <HowTo />                                       
+			return( <div id = 'content-container'>
+                     <HowTo changeView = {props.changeView} />                                       
 	       </div>);
 			break;
 
 		case 3: 
 			return(
-			 <div id = 'content-container'
-                                    style = {{
-                                      display: 'flex',
-                                      justifyContent: 'center',
-                                      alignItems: 'center',
-                                        height: '500px',
-                                        width: '300px',
-                                        borderRadius:'25px',
-                                        backgroundColor: "white",
-                                       boxShadow: ' 0px 5px 3px 5px #bfaae9',
-                                        marginTop: '10px',
-                                    }}>
-                    <Reviews />         
+			 <div id = 'content-container'>
+                    <Reviews  />         
         	</div>);
         	break;
+
+
+  case 4: 
+    return(
+          <div id = 'content-container'>
+                 <ToolsPage changeView = {props.changeView} />
+
+          </div>
+      )
         
 
 	}
