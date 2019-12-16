@@ -1,20 +1,55 @@
 <!DOCTYPE html>
-<html lang="en" style = "background-color: #f9ecf6">
+<html lang="en" style = "background-color: #f9f9f9">
 <head>
 	<style>
+    ol {
+   list-style: none;
+   counter-reset: item;
+   padding-inline-start: 20px;
+
+ }
+ li {
+   counter-increment: item;
+   margin-bottom: 5px;
+
+ }
+ li:before {
+   margin-right: 5px;
+   content: counter(item);
+   background: lightblue;
+   border-radius: 100%;
+   color: black;
+   width: 1.2em;
+   text-align: center;
+   display: inline-block;
+     margin-left: -1.5em;
+   width: -2.0em;
+ }
     input.fillInResponse{
-      background-color: #fefefe;
-      color: black;
-      border: none;
-      width: 90%;
+        background-color: #f9f9f9;
+        color: black;
+        border: none;
+        width: 90%;
+     }
+     #content-container{
+           display: flex;
+          justify-content: center;
+          align-items: center;
+            height: 500px;
+            width: 300px;
+            border-radius: 25px;
+            
+            box-shadow: 0px 5px 3px 5px #bfaae9;
+            margin-top: 10px;
      }
 		.content{
-		color: #CBDEEB;
-		background-color: #3FAAE7;
-                                text-align: center;
-                                width: 275px;
-                                height: 475px;
-                                border-radius: 10px;
+		    color: white; 
+		    background-color: #3FAAE7;
+        text-align: center;
+        width: 275px;
+        height: 475px;
+        border-radius: 10px;
+         border: solid navy 1px;
                                 		}
       .socialmediaContainer{
       		display: flex;
@@ -23,9 +58,9 @@
       		margin-top: 20px;
       }
       .selector{
-        color: #f9ecf6; 
-        font-size: 15px;
-        background-color: #3FAAE7;
+        color: #3FAAE7; 
+        font-size: 20px;
+        
         border-radius: 3px;
         box-shadow:  0px 3px 3px 0px #DCCBF0;
          padding-left: 2px;
@@ -38,26 +73,98 @@
 
      }
      #fillInAContainer{
-        background-color: #fefefe;
+        background-color: #f9f9f9;
         border-radius: 20px;
 
      } 
-     .AboutTile{
-     
-      flex-grow: 1;
-      height: 225px;
-      width: 125px;
-     
+     .QuestionContainer{
+      padding: 5px;
      }
-     
+     .tool_pic{
+        padding-left: 5px;
+        padding-right: 15px;
+     }
+     #about_content{
+        flex-grow: 100;
+        padding-top: 10px;
+
+     }
+     h1.aboutTitle{
+        font-style: oblique;
+        font-size: 18px;
+        color: black;
+     }
+     .AboutTile{
+      display: flex;
+      flex-direction: column;
+      flex-grow: 100;
+     }
+     #AboutTileTextContainer{
+          flex-grow: 100;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          text-align: left;
+          padding-left: 10px;
+          padding-right: 10px;
+          color: black;
+     }
+       #Landing{
+          display: flex;
+          flex-direction: column;
+}
+     #bottom_landing{
+        font-size: 16px;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+         text-align: left;
+         padding-right: 5px;
+         padding-left: 5px;
+         flex-grow: 2;
+     }
+     #landing_words_bottom{
+        padding-top: 5px;
+        padding-bottom: 5px;
+
+     }
+    #landing_words_top{
+        padding-bottom: 10px;
+        width: 75%;
+        text-align: left;
+        padding-left: 10px;
+    }
+    #top_landing{
+          display: flex;
+          flex-direction: row;
+          padding-top: 10px;
+           
+      }
+     #toolContextContainer{
+ 
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+           border-bottom: dashed navy 1px;
+          align-items: center;
+     }
+     #toolDescription{
+          width: 50%;
+          font-size: 16px;
+
+     }
+     #ToolsPage{
+        color: 'black';
+     }
 	</style>
   
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
-    <title>Lave</title>
-</head>
+    <title>lave</title>
+<link rel="shortcut icon" href="favicon.ico"></head>
 <body>
     <div id="root"></div>
 <script type="text/javascript" src="js/app.bundle.js"></script><script type="text/javascript" src="js/vendor.bundle.js"></script></body>

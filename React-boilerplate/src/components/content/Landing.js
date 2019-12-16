@@ -1,7 +1,19 @@
 import React from 'react';
+import EmailListJoinContainer from './EmailListJoinContainer';
 
-const Landing = () =>{
-	
+class Landing extends React.Component{
+	constructor(){
+        super();
+        this.state = {
+            disp: 0
+        };
+        console.log(window.localStorage);
+        this.addEmail = this.addEmail.bind(this);
+    }
+    addEmail(num){
+        this.setState({disp: num});
+    }
+    render(){
 		return(
 
 				<div className = "content" id = 'Landing'  style = {{ backgroundColor: '#f9f9f9', }}>
@@ -15,7 +27,7 @@ const Landing = () =>{
                                     
                                 </div>
 
-                                <div id = 'email_list' style = {{color: '#3FA9E7', borderBottom: 'double black', borderTop: 'double black ', cursor: 'pointer'}} onClick = {()=>{console.log('this is supposed to do something')}}>Join our email list!</div>
+                                <EmailListJoinContainer disp = {this.state.disp} addEmail = {this.addEmail} /> 
                                 
                                 <div id = 'bottom_landing' >     
                                     <div id = 'landing_words_bottom' >This is our mission at <span style = {{color: '#3FA9E7'}}>Lave</span>. We strive to bring a pleasant experience to those who admire and enjoy the process of maintaining their premium glass.</div>
@@ -27,7 +39,7 @@ const Landing = () =>{
         
                                 </div>
 			)
-		
+		}
 }
 
 export default Landing;

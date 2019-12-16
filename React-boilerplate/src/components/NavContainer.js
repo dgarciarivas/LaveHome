@@ -13,8 +13,10 @@ const NavContainer = (props) => {
                     display: 'flex',
                     flexDirection: 'row',
                     justifyContent: 'space-evenly',
+                    alignItems: 'center',
                     width: '302px',
                     borderRadius: '10px',
+                    marginTop: '5px',
                          }}>
                        {/*  <div id = 'spacer' style ={{width: '88px'}}> </div>*/}
                                    <div id = 'logoContainer' style = {{cursor: 'pointer'}}>

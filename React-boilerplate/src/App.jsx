@@ -32,18 +32,17 @@ const rootEl = document.getElementById('root');
                                               flexDirection: 'column',
                                               alignItems: 'center',
                                               justifyContent: 'space-between',
-                                              marginTop: '10px',
+                                              
 
 
-                                              }}>
-
+                                              }}>                                            
                               <NavContainer changeView = {this.changeViews} display = {this.state.disp}/>
 
                              
                              <ContentContainer changeView = {this.changeViews} display = {this.state.disp} />
                              <SocialContainer />
                               <iframe name="hidden_iframe" id="hidden_iframe" style={{visibility: 'hidden', width: '150px', height: '1px'}}  ></iframe>
-                           
+                              <iframe name="hidden_iframe2" id="hidden_iframe2" style={{visibility: 'hidden', width: '150px', height: '1px'}}  ></iframe>
                                </div>
                     );
 

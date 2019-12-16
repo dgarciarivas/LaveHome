@@ -4,6 +4,7 @@ import HowTo from './content/HowTo';
 import Reviews from './content/Reviews';
 import Landing from './content/Landing';
 import ToolsPage from './content/ToolsPage';
+import TipsAndTricks from './content/TipsAndTricks';
 
 const ContentContainer = (props) =>{
 
@@ -45,7 +46,13 @@ const ContentContainer = (props) =>{
 
           </div>
       )
-        
+    case 5:
+    	return(
+    		 <div id = 'content-container'>
+                 <TipsAndTricks changeView = {props.changeView} />
+
+          </div>
+    		)
 
 	}
 

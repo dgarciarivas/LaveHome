@@ -6,7 +6,7 @@ import qtip from '../../images/qtips_15.jpg';
 const QtipPic = (props)=>{
 	return(
 
-			 <div id = 'QtipPic' > 
+			 <div id = 'QtipPic' className = "tool_pic" > 
                          <img src={qtip} 
                                           alt= 'qtip'     
                                    />

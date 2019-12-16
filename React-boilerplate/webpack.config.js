@@ -8,7 +8,9 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
     template: './src/index.html',
     filename: 'index.html',
     inject: 'body',
+    favicon: './src/components/images/favicon.ico',
 });
+
 
 module.exports = {
     target: 'web', 
@@ -43,7 +45,7 @@ module.exports = {
                   ],
                 },
                 {
-                    test: /\.(jpg|png|jpeg)$/,
+                    test: /\.(jpg|png|jpeg|ico)$/,
                     use: {
                         loader: 'url-loader',
                     }
@@ -54,7 +56,8 @@ module.exports = {
     plugins: [
         new MiniCssExtractPlugin({
             filename: "styles.css",
-            chunkFilename: "styles.css"
+            chunkFilename: "styles.css",
+            
         }),
         HtmlWebpackPluginConfig,
         new webpack.NoEmitOnErrorsPlugin(),

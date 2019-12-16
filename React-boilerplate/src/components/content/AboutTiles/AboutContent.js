@@ -12,36 +12,36 @@ const AboutContent = (props) =>{
 		case 1:
 		
 			return(
-	  				<div id = "about_content" >
-                                           <Who/>
-                       </div>
+	  				
+              <Who changeAboutView = {props.changeAboutView}/>
+                       
 				);
 		break;
 
 		case 2:
 		
 			return(
-	  				<div id = "about_content" >
-                                           <What/>
-                       </div>
+	  				
+      		 <What/>
+                      
 				);
 		break;
 
 		case 3:
 		
 			return(
-	  				<div id = "about_content" >
-                                           <Why/>
-                       </div>
+	  			
+                <Why/>
+                  
 				);
 		break;
 
 		case 4:
 		
 			return(
-	  				<div id = "about_content" >
-                                           <How/>
-                       </div>
+	  			
+                <How/>
+                    
 				);
 		break;
 	}	

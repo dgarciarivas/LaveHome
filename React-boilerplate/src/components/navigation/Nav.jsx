@@ -29,7 +29,7 @@ class Nav extends React.Component{
 
            <div id = 'Nav' style= {{boxShadow:  'none',
                                     borderRadius: '10px',
-                                    marginTop: '20px'}} >
+                                    }} >
                 {/*<Sandwich  ShowMenu = {this.ShowMenu}/>*/}
                  <div id = 'nav-option-container' 
                  					style = {{

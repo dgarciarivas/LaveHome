@@ -2,6 +2,29 @@
 <html lang="en" style = "background-color: #f9f9f9">
 <head>
 	<style>
+    ol {
+   list-style: none;
+   counter-reset: item;
+   padding-inline-start: 20px;
+
+ }
+ li {
+   counter-increment: item;
+   margin-bottom: 5px;
+
+ }
+ li:before {
+   margin-right: 5px;
+   content: counter(item);
+   background: lightblue;
+   border-radius: 100%;
+   color: black;
+   width: 1.2em;
+   text-align: center;
+   display: inline-block;
+     margin-left: -1.5em;
+   width: -2.0em;
+ }
     input.fillInResponse{
         background-color: #f9f9f9;
         color: black;
@@ -57,25 +80,39 @@
      .QuestionContainer{
       padding: 5px;
      }
-     .AboutTile{
-     
-      flex-grow: 1;
-      height: 225px;
-      width: 125px;
-     
+     .tool_pic{
+        padding-left: 5px;
+        padding-right: 15px;
      }
      #about_content{
         flex-grow: 100;
         padding-top: 10px;
 
      }
-       #Landing{
-     
+     h1.aboutTitle{
+        font-style: oblique;
+        font-size: 18px;
+        color: black;
+     }
+     .AboutTile{
       display: flex;
       flex-direction: column;
-
-
+      flex-grow: 100;
      }
+     #AboutTileTextContainer{
+          flex-grow: 100;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          text-align: left;
+          padding-left: 10px;
+          padding-right: 10px;
+          color: black;
+     }
+       #Landing{
+          display: flex;
+          flex-direction: column;
+}
      #bottom_landing{
         font-size: 16px;
         color: black;
@@ -108,7 +145,7 @@
  
           display: flex;
           flex-direction: row;
-          justify-content: space-around;
+          justify-content: space-evenly;
            border-bottom: dashed navy 1px;
           align-items: center;
      }
@@ -126,7 +163,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
-    <title>Lave</title>
+    <title>lave</title>
 </head>
 <body>
     <div id="root"></div>
